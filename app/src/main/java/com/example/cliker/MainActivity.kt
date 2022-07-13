@@ -1,6 +1,7 @@
 package com.example.cliker
 
 import android.content.Context
+import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         count = storage.score()
         if (count != 0) {
             findViewById<TextView>(R.id.TextCount).text = count.toString()
+
         }
     }
 
@@ -31,11 +33,14 @@ class MainActivity : AppCompatActivity() {
         count += 1
         storage.saveScore(count)
         findViewById<TextView>(R.id.TextCount).text = count.toString()
+        MediaPlayer.create(this, SoundsButton.CLICK_BUTTON).start()
+
     }
 
     fun resetButton(view: View) {
         count = 0
         storage.saveScore(count)
         findViewById<TextView>(R.id.TextCount).text = count.toString()
+        MediaPlayer.create(this,SoundsButton.RESET_BUTTON).start()
     }
 }
