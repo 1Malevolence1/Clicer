@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Cliker</string>
+    <string name="app_name">Clicker</string>
     <string name="button">Click</string>
     <string name="Result">Show your maximum</string>
 </resources>

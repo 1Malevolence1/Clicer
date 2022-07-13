@@ -15,24 +15,21 @@
         android:layout_height="wrap_content"
         android:text="@string/Result"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/addCounter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.266" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addCounter"
-        android:layout_width="165dp"
-        android:layout_height="74dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:onClick="onCLick"
         android:text="@string/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.825" />
-
+        app:layout_constraintTop_toBottomOf="@id/TextCount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
