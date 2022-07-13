@@ -11,7 +11,7 @@ private const val key_count = "count"
 
 class MainActivity : AppCompatActivity() {
     private var count = 0
-    private lateinit var storage : SharedPreferences
+    private lateinit var storage: SharedPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +31,8 @@ class MainActivity : AppCompatActivity() {
         saveScore()
         findViewById<TextView>(R.id.TextCount).text = count.toString()
     }
-    fun resetButton(view: View){
+
+    fun resetButton(view: View) {
         count = 0
         saveScore()
         findViewById<TextView>(R.id.TextCount).text = count.toString()
