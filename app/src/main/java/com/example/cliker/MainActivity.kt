@@ -31,6 +31,12 @@ class MainActivity : AppCompatActivity() {
         saveScore()
         findViewById<TextView>(R.id.TextCount).text = count.toString()
     }
+    fun resetButton(view: View){
+        count = 0
+        saveScore()
+        findViewById<TextView>(R.id.TextCount).text = count.toString()
+
+    }
 
     private fun score() = storage.getInt(key_count, 0)
 
