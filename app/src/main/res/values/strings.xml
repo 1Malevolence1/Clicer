@@ -3,4 +3,6 @@
     <string name="button">Click</string>
     <string name="Result">Show your maximum</string>
     <string name="reset_label">Reset score</string>
+    <string name="Results_Table" translatable="false">Таблица результатов</string>
+    <string name="btBackResultsTable" translatable="false">Назад</string>
 </resources>
