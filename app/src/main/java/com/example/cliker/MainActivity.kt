@@ -5,7 +5,6 @@ import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -44,16 +43,11 @@ class MainActivity : AppCompatActivity() {
         count = 0
         storage.saveScore(count)
         findViewById<TextView>(R.id.TextCount).text = count.toString()
-        MediaPlayer.create(this,SoundsButton.RESET_BUTTON).start()
+        MediaPlayer.create(this, SoundsButton.RESET_BUTTON).start()
     }
 
-    fun onClickResultsTable(viev : View){
-
+    fun onClickResultsTable(viev: View) {
         val intent = Intent(this, MainActivity2::class.java)
         startActivity(intent)
-
     }
-
-
-
 }
